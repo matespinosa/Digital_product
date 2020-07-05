@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/*---------------Variables-----------*/
+:root{
+--green-color: #7ACC2D;
+--white-color: white;
+--black-color: #313337;
+/*Espaciado*/
+--space:10px;
+/*Tipografía*/
+--normal:12px;
+/*Box shadow*/
+--box: 0px 0 2px 1px #e6e5e9;
+}
+/*---------------Variables-----------*/
+
+
+
+/*------------------Sección GENERAL---------------*/
+
+html,body {
+    padding: 0;
+    margin: 0;
+    font-size: var(--normal);
+    font-family: 'Open Sans', sans-serif;
+    color: var(--black-color);
+}
+
+P, label {
+    font-size: var(--normal);
+}
+
+
+nav {
+    display: flex;
+    background-color: var(--green-color) ;
+    padding: var(--space);
+    max-height: 60px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    padding-left: var(--space);
+    list-style: none;
+}
+
+nav li a {
+    color: var(--black-color);
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: var(--white-color);
+
+}
+
+/*---------------------------------------------------------------  MAIN SECTION*/
+
+.main_section {
+    padding: 15%;
+    text-align: center;
+}
+/*----------------------------------------------------------------  PRODUCTOS */
+.products {
+    background-image: url("../images/curve.png");
+    height: 50px;
+    background-size: cover;
+    background-position: center top;
+    padding: 20%;
+    display: flex;
+}
+
+.product {
+    padding: var(--space);
+    margin-top: -240px;
+}
+.product .content {
+    background-color: var(--white-color);
+    padding: var(--space);
+    box-shadow: var(--box);
+}
+
+.img_content {
+    text-align: center;
+}
+
+.main_button {
+    background-color: var(--green-color);
+    width: 100%;
+    padding: var(--space);
+    font-size: var(--normal);
+    color: var(--white-color);
+    border: 0;
+    cursor: pointer;
+    border-radius: 2px;
+
+}
+
+.main_button:hover {
+    background-color: #5e9e22;
+    
+}
+
+/*Finaliza main-section*/
+
+/*------------------------------------------------ BENEFICIOS*/
+
+.beneficios {
+    padding: 10%;
+    display: flex;
+}
+
+.beneficio {
+    text-align: center;
+    padding: 20px;
+}
+
+.beneficio img {
+    max-height: 100px;
+}
+
+.text_beneficio {
+    text-align: justify;
+}
+
+/*Finaliza beneficios*/
+
+/*------------------------------------------- INICIO MENTIONS*/
+
+.mentions {
+    display: flex;
+    padding: 5%;
+}
+
+.mention img {
+    width: 100%;
+}
+
+h2.mention_title {
+    text-align: center;
+}
+
+.mention {
+    padding: var(--space);
+}
+
+.content_mention {
+    box-shadow: 0px 0 2px 1px #e6e5e9;
+}
+
+.mention .text {
+    padding: var(--space);
+}
+/*Finaliza Mentions*/
+
+/*--------------------------------------------------- INICIO VENTA*/
+
+.modulo_pago {
+    background-color: var(--white-color);
+    box-shadow: var(--box);
+    padding: var(--space);
+}
+
+.modulo_pago_images {
+    max-width: 150px;
+    text-align: center;
+    margin: auto;
+}
+
+.data {
+    margin-top: var(--space);
+    margin-bottom: var(--space);
+    width: 100%;
+    height: 35px;
+    border-radius: 4px;
+    border: 1px solid var(--black-color);
+    box-sizing: border-box;
+}
+
+
+
+/*--------------------------------------------------- INICIO FOOTER*/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--normal);
+    background-color: var(--black-color);
+    padding: var(--space);
+    color: var(--white-color);
+}
+
+.option_contact a{
+    color: var(--green-color);
+}

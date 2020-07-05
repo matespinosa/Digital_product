@@ -1,0 +1,74 @@
+/*https://daneden.github.io/animate.css/*/
+
+.fadeIn {
+    /*"-webkit-animation:" asegura que todos los valores que se van animar se vayan a cumplir, un pack predefinido para los navecadores ;*/
+
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s; /*Definir la duración que va a tener nuestra animación*/
+
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; /*Define que se va a cumplir los gidframes como de ida como de regreso*/
+
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn; /*Nombre a nuestra animación*/
+}
+
+/*Keyframe lleva un "identifier" que es "fadeIn" es el nombre*/
+/*Aquí definimos que animación va a tener esta clase*/
+@keyframes fadeIn { 
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/*El mismo efecto pero deslizando hacia abajo*/
+.fadeInDown {
+    -webkit-animation-duration: 1s; 
+    animation-duration: 1s; /*Definir la duración que va a tener nuestra animación*/
+
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; /*Define que se va a cumplir los gidframes como de ida como de regreso*/
+
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown; /*Nombre a nuestra animación*/
+}
+
+@keyframes fadeInDown { 
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0,-100%,0); /*transform nos ayuda animar elementos de css, con translate 3d, nos dara también posición a nuestro elemento, el 100% da el efecto que se de de arriba hacia abajo :)*/
+        transform: translate3d(0,-100%,0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0,0,0); /*va a ir a su posición original*/
+        transform: translate3d(0,0,0);
+    }
+}
+
+.fadeInUp {
+    -webkit-animation-duration: 1s; 
+    animation-duration: 1s; /*Definir la duración que va a tener nuestra animación*/
+
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; /*Define que se va a cumplir los gidframes como de ida como de regreso*/
+
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp; /*Nombre a nuestra animación*/
+}
+
+@keyframes fadeInUp { 
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0,100%,0);  /*transform nos ayuda animar elementos de css, con translate 3d, nos dara también posición a nuestro elemento, el 100% da el efecto que se de abajo hacia arriba :)*/
+        transform: translate3d(0,100%,0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0,0,0); /*va a ir a su posición original*/
+        transform: translate3d(0,0,0);
+    }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    
+    <title>Brand</title>
+</head>
+<body>
+    <!--Aquí empieza en navbar -->
+    <nav class="fadeInDown">
+        <div class="brand_image">
+            <a href="index.html">
+                <img src="images/logo.png" alt="">
+            </a>
+        </div>
+        <div class="nav_options">
+            <ul>
+                <li>
+                    <a href="#">Faqs</a></li>
+                <li>
+                    <a href="#">Producto y descripción</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    
+    <!-------Empiezan FORMULARIO VENTA-------->
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-4">
+                <div class="modulo_pago">
+                    <div class="modulo_pago_images">
+                        <img src="images/box2.png" alt="">
+                    </div>
+                    <h3>Producto</h3>
+                    <p>Miles de productos hay en el mercado, pero nada como una caja de gatitos</p>
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="modulo_pago">
+                    <form action="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3QK2XL5L4CJ82" method="POST"> <!--CRUD -etiqueta METHOD, tipo de metodo para que se entiendadn los dos sistemas-->
+                        <label for="name">Nombre</label> <!--for linkea la etiqueta lable con el input, -->
+                        <br>
+                        <input type="text" placeholder="" id="name" class="data"> <!--Crea un campo de texto para que el usuario lo pueda llenar-->
+                        <br>
+                        <label for="email">E-mail</label> 
+                        <br>
+                        <input type="text" placeholder="" id="email" class="data">
+                        <br>
+                        <label for="phone">Teléfono</label> 
+                        <br>
+                        <input type="text" placeholder="" id="phone" class="data">
+
+                        <input type="submit" class="main_button" name="submit" value="Confirmar pago"> <!--Para realizar un boton podemos hacerlo con diferentes propiedades, pero una de las más usadas es con input y le ponemos submit en el "type"-->
+                    </form> <!--Estiqueta de formularios, ACTION es un atributo para ayudarnos a definir cual sera la accion para llenar el formulario-->
+
+                    <!--A veces puede suceder que cuando le asignamos valroes a NOMBRE, TELEFONO, CORREO, puede aparecer esa información en la URL cuando le damos submit -->
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <!-------Empiezan FORMULARIO BENEFICIOS-------->
+    
+    <!--Inicio de footer-->
+    <footer>
+        <div class="option">Terminos y condiciones</div>
+        <div class="option"><a href="/cdn-cgi/email-protecction">
+            <div class="_cf_email_" data-cfemail=""></div>
+        </div>
+    </footer>
+<script src="scripts/script.js"></script>
+</body>
+</html>

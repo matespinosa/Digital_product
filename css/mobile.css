@@ -1,0 +1,22 @@
+@media (max-width: 600px) { /*Pantallas hasta 600px*/
+   
+    .products {
+        display: inherit;
+        height: auto;
+    }
+
+    .product {
+        margin-top: auto;
+    }
+
+    .main_section {
+        padding: 4%;
+    }
+
+    /*Es importante tener en cuenta que si hay dos atributos en donde le podemos aplicar la misma propiedad podemos separarlo con una coma ','*/
+    .beneficios, .mentions {
+        display: inherit;
+    }
+
+    
+}
